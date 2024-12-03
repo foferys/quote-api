@@ -10,7 +10,9 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        String frase = "ciao biao";
+
+        
+        String frase = "Titolo home";
         model.addAttribute("frase", frase);
 
         return "index";
