@@ -12,7 +12,7 @@ public class HomeController {
     public String home(Model model) {
 
         
-        String frase = "Titolo home";
+        String frase = "Frasi simpatiche sulla programmazione";
         model.addAttribute("frase", frase);
 
         return "index";
