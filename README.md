@@ -85,6 +85,7 @@ Response
 </details>
 
 
+<<<<<<< HEAD
 ### Dedication
 
 <div align="center">
