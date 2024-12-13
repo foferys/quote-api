@@ -3,7 +3,6 @@ package com.prova_api.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.prova_api.phrases.Phrase;
-import com.prova_api.phrases.PhraseList;
 import com.prova_api.services.PhraseRepository;
 
 import java.util.Collections;

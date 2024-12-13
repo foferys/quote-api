@@ -2,6 +2,12 @@ programming funny quotes
 =========
 [![Contributors](https://img.shields.io/badge/contributors-1-46CC12)](#contributors-)
 [![spring](https://img.shields.io/badge/Springboot-v3.3.5-5FA04E?logo=spring)](https://spring.io/projects/spring-boot)
+[![mysql](https://img.shields.io/badge/Mysql-yellow?style=for-the-badge&logo=mysql&logoColor=000)](https://www.mysql.com/it/)
+
+<a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="26" height="26" alt="Java" />
+</a>
+[![pp](https://img.shields.io/badge/Buy_me_a_coffee-3775A9?logo=paypal)](https://www.paypal.com/paypalme/foferys)
 
 
 ## Description:
@@ -10,9 +16,9 @@ A simple api that returns a random funny fact about programming on a GET request
 
 ### Example Usage
 
-<!-- ``` 
+``` 
 curl http://localhost:8080/getPhrase/random
-``` -->
+```
 
 Response
 
@@ -80,9 +86,9 @@ Response
 <p>This API serves up quirky quotes that programmers can’t debug away! </p>
   <img width="500" height="500" alt="my coding backpack in ASCII ART" src="./bkp_db/backpack_ascii.png" />
   <p>If you enjoy this api, or just love programming, please donate to:</p>
- [![pp](https://img.shields.io/badge/Donate-3775A9?logo=paypal)](https://www.paypal.com/paypalme/foferys)
-
 </div>
+
+[![pp](https://img.shields.io/badge/Donate-3775A9?logo=paypal)](https://www.paypal.com/paypalme/foferys)
 
 ## Contributors ✨ 
 [![](https://img.shields.io/badge/contributors-1-46CC12)](# "Contributors")
