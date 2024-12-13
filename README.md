@@ -1,13 +1,13 @@
 programming funny quotes
 =========
 [![Contributors](https://img.shields.io/badge/contributors-1-46CC12)](#contributors-)
-[![spring](https://img.shields.io/badge/Springboot-v3.3.5-5FA04E?logo=spring)](https://spring.io/projects/spring-boot)
-[![mysql](https://img.shields.io/badge/Mysql-yellow?style=for-the-badge&logo=mysql&logoColor=000)](https://www.mysql.com/it/)
+[![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=fff)](#)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#)
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
 
-<a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="26" height="26" alt="Java" />
-</a>
 [![pp](https://img.shields.io/badge/Buy_me_a_coffee-3775A9?logo=paypal)](https://www.paypal.com/paypalme/foferys)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](#Dedication-)
 
 
 ## Description:
@@ -82,13 +82,12 @@ Response
 
 ### Dedication
 
-<div align="center">
 <p>This API serves up quirky quotes that programmers can’t debug away! </p>
-  <img width="500" height="500" alt="my coding backpack in ASCII ART" src="./bkp_db/backpack_ascii.png" />
-  <p>If you enjoy this api, or just love programming, please donate to:</p>
-</div>
+<img width="500" height="500" alt="my coding backpack in ASCII ART" src="./bkp_db/backpack_ascii.png" />
+<p>If you enjoy this api, or just love programming, please donate to:</p>
 
 [![pp](https://img.shields.io/badge/Donate-3775A9?logo=paypal)](https://www.paypal.com/paypalme/foferys)
+
 
 ## Contributors ✨ 
 [![](https://img.shields.io/badge/contributors-1-46CC12)](# "Contributors")
