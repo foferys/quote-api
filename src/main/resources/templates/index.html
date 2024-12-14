@@ -1,12 +1,202 @@
 <!DOCTYPE html>
 <html lang="ita">
 
-<head th:insert="~{/docParts/head :: headContent}" th:with="pageTitle='Prova-api'"></head>
+<head th:insert="~{/docParts/head :: headContent}" th:with="pageTitle='Programmers funny facts API'">
+
+
+</head>
 
 <body>
+
+    <div class="container text-center aling-content-center mt-5">
+
+        <h1>programmers funny facts</h1>
+        <p>
+            A simple service to get funny quotes for your websites etc.
+        </p>
+        <div class="widget widget-lg"><a class="btn btnstar" href="https://github.com/foferys/programmers-facts-api" rel="noopener" target="_blank" aria-label="Star foferys-programmers-facts-api"><svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-star" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path></svg>&nbsp;<span>Star</span></a></div>
+        
+
+        <blockquote class="main-quote" id="main-quote" th:text="${randomexample}"></blockquote>
+        
+
+
+
+        <img width="300" class="p-3" src="assets/backpack_ascii.png" alt="programmer bag ascii art">
+
+        <div class="d-flex flex-column  align-items-center"><br>
+            <p>Try in your Browser:</p>
+            <div class="pre">
+
+                <code><b>GET</b> http://localhost:8080/getPhrase/random</code>
+            </div>
+            <br>
+            <p>or in your terminal:</p>
+            <div class="pre">
+                <code><b class="text-success">curl</b> http://localhost:8080/getPhrase/random</code>
+            </div>
+        </div>
+
+        <br>
+        <main>
+            <h2 class="text-start">Docs</h2>
+
+            <div class="block" id="random-quote">
+
+                <div class="block-desc">
+                    <p> Get a random fun quote</p>
+                    <div class="right">
+                        <!-- <a href="javascript:;" onclick="getRandomQuote('#random-quote', 1);" class="btn2 btn-inverted randomize"
+                            style="">Randomize!
+                        </a> -->
+                        <div class="loader" style="display: none;"></div>
+                    </div>
+                </div>
+                
+                <div class="block-container">
+                
+                    <div class="block-endpoint">
+                        <span class="method">GET</span> <a target="_blank"
+                            href="http://localhost:8080/getPhrase/random">http://localhost:8080/getPhrase/random</a>
+                    </div>
+                
+                    <div class="block-content">
+                        <pre><code th:text="${randomjson}"></code></pre>
+                    </div>
+                
+                </div>
+                
+                <div class="block-footer">
+                    <a href="" th:href="@{'https://twitter.com/intent/tweet?text=' + ${randomexample}}"
+                        class="btn2 twitter" target="_blank">
+                        Tweet it!
+                    </a>
+                </div>
+                
+            </div>
+
+            <!-- all frontend -->
+            <div class="block" id="random-quote">
+
+                <div class="block-desc">
+                    <p> Get several front-end fun programming quotes</p>
+                    <div class="right">
+                        <!-- <a href="javascript:;" onclick="getRandomQuote('#random-quote', 1);" class="btn2 btn-inverted randomize"
+                            style="">Randomize!
+                        </a> -->
+                        <div class="loader" style="display: none;"></div>
+                    </div>
+                </div>
+                
+                <div class="block-container">
+                
+                    <div class="block-endpoint">
+                        <span class="method">GET</span> <a target="_blank"
+                            href="http://localhost:8080/getPhrase/?type=frontend">http://localhost:8080/getPhrase/?type=frontend</a>
+                    </div>
+                
+                    <div class="block-content">
+                        <pre><code>{
+    "data": [
+        {
+            "id": 2,
+            "phrase": "Frontend is 90% making things pretty and 10% crying over browser compatibility.",
+            "type": "frontend"
+        },
+        {
+            "id": 5,
+            "phrase": "Frontend without animations is like pizza without cheese.",
+            "type": "frontend"
+        },
+        {
+            "id": 8,
+            "phrase": "Frontend developers always say, \"It looked fine on my machine.\"",
+            "type": "frontend"
+        },
+        ...
+    ]
+}
+                        </code></pre>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- all -->
+            <div class="block" id="random-quote">
+
+                <div class="block-desc">
+                    <p> Get all list fun programming quotes</p>
+                    <div class="right">
+                        <!-- <a href="javascript:;" onclick="getRandomQuote('#random-quote', 1);" class="btn2 btn-inverted randomize"
+                            style="">Randomize!
+                        </a> -->
+                        <div class="loader" style="display: none;"></div>
+                    </div>
+                </div>
+                
+                <div class="block-container">
+                
+                    <div class="block-endpoint">
+                        <span class="method">GET</span> <a target="_blank"
+                            href="http://localhost:8080/getPhrase/all">http://localhost:8080/getPhrase/all</a>
+                    </div>
+                
+                    <div class="block-content">
+                        <pre><code>{
+    "data": [
+        {
+            "id": 1,
+            "phrase": "Backend developers always say, \"It worked on my local server.\"",
+            "type": "backend"
+        },
+        {
+            "id": 2,
+            "phrase": "Frontend is 90% making things pretty and 10% crying over browser compatibility.",
+            "type": "frontend"
+        },
+        {
+            "id": 3,
+            "phrase": "Generic coding advice: if it works, don’t ask why.",
+            "type": "generic"
+        },
+        ...
+    ]
+}
+                        </code></pre>
+                    </div>
+                
+                </div>
+            </div>
+
+
+            <p>
+                The complete API documentation is available on the <a class="underline" href="https://github.com/foferys/programmers-facts-api">Github repository</a>!
+                <br>
+                You can integrate the API into Postman thanks to the Postman collection available on the repository.
+            </p>
+
+            <hr>
+            <!-- <h3> How to contribute</h3>
+            <p>
+               If you want to suggest a funny quote, go to the <a href="https://github.com/foferys/programmers-facts-api">Github repository</a>, 
+               <a class="btn underline border" href="https://github.com/foferys/programmers-facts-api/fork" rel="noopener" target="_blank" aria-label="Fork shevabam/breaking-bad-quotes on GitHub"><svg viewBox="0 0 16 16" width="14" height="14" class="octicon octicon-repo-forked" aria-hidden="true"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>&nbsp;<span>fork</span></a>
+               the project, add your quote to the quotes.js file and just do a pull request!
+            </p> -->
+                
+        </main>
+
+
+
+
+        <footer>
+            <br>
+            <p>Got a funny quote? Submit yours to @codethebug on threads</p>
     
-    <h1 class="" th:text="${frase}"></h1>
-    <h1 class="text-red-500">stocaz</h1>
+            <br>
+            <p>Built by <a href="https://gianpieroferraro.netsons.org/">Gianpiero Ferraro</a></p>
+        </footer>
+    </div>
     
 </body>
 </html>
